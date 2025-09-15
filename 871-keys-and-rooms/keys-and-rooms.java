@@ -1,6 +1,9 @@
+import java.util.*;
+
 class Solution {
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
-        boolean[] visited = new boolean[rooms.size()];
+        int n = rooms.size();
+        boolean[] visited = new boolean[n];
         dfs(0, rooms, visited);
 
         for (boolean v : visited) {
